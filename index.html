@@ -235,21 +235,69 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <!-- replaced contact form start -->
+                    <form id="contact-form" action="https://formsubmit.co/079080dc1eb622913dd0fd0fec2b5a47" method="POST">
+                        <!-- Prevent captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+
                         <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
+                            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+
+                        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
                     </form>
+
+                    <!-- Success/Error Messages -->
+                    <div id="form-message" style="display:none; margin-top:15px;"></div>
+
+                    <script>
+                        (function() {
+                            const form = document.getElementById("contact-form");
+                            const messageBox = document.getElementById("form-message");
+
+                            form.addEventListener("submit", async function(event) {
+                                event.preventDefault(); // Stop default redirect
+
+                                const formData = new FormData(form);
+
+                                try {
+                                    const response = await fetch(form.action, {
+                                        method: "POST",
+                                        body: formData,
+                                    });
+
+                                    if (response.ok) {
+                                        messageBox.style.display = "block";
+                                        messageBox.style.color = "green";
+                                        messageBox.innerHTML = "✅ Thank you! Your message has been sent.";
+                                        form.reset();
+
+                                        setTimeout(() => {
+                                            messageBox.style.display = "none";
+                                        }, 10000); // hide after 10s
+                                    } else {
+                                        throw new Error("Form submission failed.");
+                                    }
+                                } catch (error) {
+                                    messageBox.style.display = "block";
+                                    messageBox.style.color = "red";
+                                    messageBox.innerHTML = '⚠️ Oops! Something went wrong. Please try again or email us at <a href="mailto:info@mathibelem.co.za">info@mathibelem.co.za</a>';
+                                }
+                            });
+                        })();
+                    </script>
+                    <!-- replaced contact form end -->
                 </div>
             </div>
             
