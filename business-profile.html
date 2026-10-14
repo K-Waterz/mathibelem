@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Profile — Mathibele Mahlaela Attorneys</title>
+    <meta name="description" content="Business profile of Mathibele Mahlaela Attorneys, a Centurion law firm in commercial, corporate, employment, public-administration and private-client practice.">
+    <meta name="author" content="Mathibele Mahlaela Attorneys">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1c1c1c;
+            --ink-2: #2b2b2b;
+            --text: #3a372f;
+            --muted: #5e584e;
+            --gold: #aa975a;
+            --gold-deep: #8a7a4a;
+            --gold-text: #6d5c30;
+            --cream: #faf8f5;
+            --cream-2: #f3efe6;
+            --line: #e6e0d6;
+            --line-strong: #d3c9b6;
+            --paper: #ffffff;
+            --charcoal: #222222;
+            --measure: 68ch;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--cream-2);
+            color: var(--text);
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.65;
+            font-weight: 400;
+        }
+
+        .toolbar {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px 16px;
+            padding: 12px 28px;
+            background: var(--charcoal);
+            color: #f4f0e6;
+            font-size: 13px;
+            letter-spacing: 0.04em;
+        }
+
+        .toolbar strong {
+            font-weight: 600;
+            color: var(--gold);
+        }
+
+        .toolbar button {
+            appearance: none;
+            border: 1px solid var(--gold);
+            background: transparent;
+            color: #f4f0e6;
+            font: inherit;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            padding: 8px 14px;
+            cursor: pointer;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .toolbar button:hover,
+        .toolbar button:focus-visible {
+            background: var(--gold);
+            color: var(--charcoal);
+            outline: none;
+        }
+
+        .document {
+            width: min(920px, calc(100% - 32px));
+            margin: 28px auto 64px;
+            background: var(--paper);
+            border: 1px solid var(--line);
+        }
+
+        .cover {
+            background: var(--charcoal);
+            color: #f7f4ee;
+            min-height: 92vh;
+            padding: 72px 72px 56px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cover-logo {
+            width: 280px;
+            height: auto;
+            display: block;
+        }
+
+        .cover-kicker {
+            margin-top: 72px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        .cover h1 {
+            font-family: "Merriweather", Georgia, serif;
+            font-weight: 300;
+            font-size: clamp(36px, 5vw, 52px);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: #f7f4ee;
+            max-width: 16ch;
+            margin-top: 18px;
+        }
+
+        .cover-deck {
+            max-width: 46ch;
+            margin-top: 22px;
+            color: rgba(247, 244, 238, 0.82);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .cover-rule {
+            width: 72px;
+            height: 2px;
+            background: var(--gold);
+            margin: 36px 0 28px;
+        }
+
+        .cover-meta {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            max-width: 560px;
+        }
+
+        .cover-meta dt {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 6px;
+        }
+
+        .cover-meta dd {
+            color: #f7f4ee;
+            font-size: 15px;
+        }
+
+        .sheet {
+            padding: 64px 72px 72px;
+        }
+
+        .sheet + .sheet {
+            border-top: 1px solid var(--line);
+        }
+
+        .running {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            padding-bottom: 14px;
+            margin-bottom: 36px;
+            border-bottom: 1px solid var(--line);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .running span:last-child { color: var(--gold-text); }
+
+        .kicker {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--gold-text);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: "Merriweather", Georgia, serif;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+            margin-bottom: 22px;
+        }
+
+        h3 {
+            font-family: "Merriweather", Georgia, serif;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 1.3;
+            color: var(--ink);
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--gold-text);
+            margin: 18px 0 8px;
+        }
+
+        p { margin-bottom: 16px; max-width: var(--measure); }
+
+        p.lede {
+            font-family: "Merriweather", Georgia, serif;
+            font-weight: 300;
+            font-size: 21px;
+            line-height: 1.55;
+            color: var(--ink-2);
+            max-width: 38ch;
+            margin-bottom: 22px;
+        }
+
+        a { color: var(--gold-deep); text-underline-offset: 3px; }
+        a:hover { color: var(--ink); }
+
+        .note {
+            font-size: 14px;
+            color: var(--muted);
+            max-width: 62ch;
+        }
+
+        .toc { list-style: none; margin-top: 8px; }
+
+        .toc a {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            padding: 11px 0;
+            border-bottom: 1px solid var(--line);
+            text-decoration: none;
+            color: var(--ink-2);
+        }
+
+        .toc a:hover .toc-name { color: var(--gold-deep); }
+
+        .toc-name { font-weight: 600; }
+
+        .toc-dots {
+            flex: 1;
+            border-bottom: 1px dotted var(--line-strong);
+            transform: translateY(-4px);
+        }
+
+        .toc-num {
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.08em;
+            color: var(--gold-text);
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin: 28px 0 8px;
+            border-top: 1px solid var(--line);
+        }
+
+        .facts div {
+            padding: 18px 22px 18px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .facts div:nth-child(odd) { padding-right: 28px; }
+        .facts div:nth-child(even) { padding-left: 28px; border-left: 1px solid var(--line); }
+
+        .facts strong {
+            display: block;
+            font-family: "Merriweather", Georgia, serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 4px;
+        }
+
+        .facts span {
+            display: block;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0 18px;
+        }
+
+        .particulars th,
+        .career th {
+            text-align: left;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--gold-text);
+            vertical-align: top;
+        }
+
+        .particulars th {
+            width: 34%;
+            padding: 12px 18px 12px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .particulars td {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--line);
+            color: var(--ink-2);
+            vertical-align: top;
+        }
+
+        .career { font-size: 14.5px; }
+
+        .career th,
+        .career td {
+            padding: 12px 12px 12px 0;
+            border-bottom: 1px solid var(--line);
+            vertical-align: top;
+            text-align: left;
+            letter-spacing: 0;
+            text-transform: none;
+            font-size: 14.5px;
+            color: var(--text);
+            font-weight: 400;
+        }
+
+        .career thead th {
+            font-size: 11px;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--gold-text);
+            font-weight: 700;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .career td:first-child {
+            white-space: nowrap;
+            color: var(--ink);
+            font-weight: 600;
+            width: 22%;
+        }
+
+        .principles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px 36px;
+            margin-top: 12px;
+        }
+
+        .principle {
+            padding-top: 14px;
+            border-top: 2px solid var(--gold);
+        }
+
+        .principle em {
+            display: block;
+            font-family: "Merriweather", Georgia, serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--ink);
+            margin-bottom: 8px;
+        }
+
+        .principle p { font-size: 15.5px; margin: 0; }
+
+        ol.steps {
+            list-style: none;
+            margin: 12px 0 0;
+            counter-reset: step;
+        }
+
+        ol.steps li {
+            display: grid;
+            grid-template-columns: 52px 1fr;
+            gap: 8px 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--line);
+            max-width: 68ch;
+        }
+
+        ol.steps li::before {
+            counter-increment: step;
+            content: counter(step, decimal-leading-zero);
+            font-family: "Merriweather", Georgia, serif;
+            color: var(--gold-text);
+            font-weight: 700;
+            padding-top: 2px;
+        }
+
+        ol.steps strong {
+            display: block;
+            color: var(--ink);
+            margin-bottom: 4px;
+        }
+
+        .practice {
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 8px 12px;
+            padding: 28px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .practice:last-of-type { border-bottom: 1px solid var(--line); }
+
+        .practice-no {
+            font-family: "Merriweather", Georgia, serif;
+            font-weight: 700;
+            color: var(--gold);
+            font-size: 18px;
+            padding-top: 4px;
+        }
+
+        .practice ul, .plain-list {
+            margin: 0 0 8px 18px;
+            max-width: 62ch;
+        }
+
+        .practice li, .plain-list li { margin: 4px 0; }
+
+        blockquote {
+            margin: 26px 0;
+            padding: 4px 0 4px 22px;
+            border-left: 2px solid var(--gold);
+        }
+
+        blockquote p {
+            font-family: "Merriweather", Georgia, serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 1.55;
+            color: var(--ink-2);
+            margin-bottom: 10px;
+        }
+
+        blockquote footer {
+            font-style: normal;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold-text);
+        }
+
+        .panel {
+            background: var(--cream);
+            border-top: 2px solid var(--gold);
+            padding: 28px 28px 12px;
+            margin-top: 8px;
+        }
+
+        .panel h3 { font-size: 20px; }
+
+        .two {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 36px;
+            align-items: start;
+        }
+
+        .side {
+            background: var(--cream);
+            padding: 22px 22px 8px;
+            border-top: 2px solid var(--gold);
+        }
+
+        .side p, .side li { font-size: 14.5px; }
+
+        .close {
+            background: var(--charcoal);
+            color: #f7f4ee;
+            padding: 64px 72px;
+        }
+
+        .close h2 { color: #f7f4ee; }
+
+        .close p { color: rgba(247, 244, 238, 0.86); }
+
+        .close a { color: var(--gold); }
+        .close a:hover { color: #f7f4ee; }
+
+        .close-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px 40px;
+            margin-top: 12px;
+        }
+
+        .close h3 {
+            color: var(--gold);
+            font-family: "Open Sans", sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .close .close-grid p { margin-bottom: 0; font-size: 16px; line-height: 1.55; }
+
+        .colophon {
+            margin-top: 36px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(170, 151, 90, 0.45);
+            font-size: 12px;
+            letter-spacing: 0.04em;
+            color: rgba(247, 244, 238, 0.62);
+            max-width: none;
+        }
+
+        .sources { font-size: 13px; color: var(--muted); }
+        .sources ol { margin-left: 18px; }
+        .sources li { margin: 6px 0; }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        @page {
+            size: A4;
+            margin: 16mm 16mm 18mm;
+        }
+
+        @media screen and (max-width: 760px) {
+            .toolbar { padding: 12px 16px; }
+            .cover, .sheet, .close { padding: 36px 22px 40px; }
+            .cover { min-height: auto; }
+            .cover-meta, .facts, .principles, .two, .close-grid { grid-template-columns: 1fr; }
+            .facts div:nth-child(even) { padding-left: 0; border-left: 0; }
+            .practice { grid-template-columns: 40px 1fr; }
+            .career td:first-child { white-space: normal; }
+            h2 { font-size: 26px; }
+        }
+
+        @media print {
+            .toolbar { display: none; }
+            body { background: white; font-size: 10.5pt; line-height: 1.5; }
+            .document {
+                width: auto;
+                margin: 0;
+                border: 0;
+            }
+            .cover {
+                min-height: 260mm;
+                page-break-after: always;
+                padding: 22mm 18mm 16mm;
+            }
+            .cover h1 { font-size: 36pt; }
+            .sheet, .close { padding: 0; }
+            .break { page-break-before: always; }
+            h2 { font-size: 22pt; }
+            .lede { font-size: 13.5pt; }
+            .running, .kicker, h2, h3, h4, .lede {
+                break-after: avoid;
+                page-break-after: avoid;
+            }
+            .practice, .principle, blockquote, tr, .panel, .side, .facts, ol.steps li {
+                break-inside: avoid;
+            }
+            .cover-meta { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .facts { grid-template-columns: 1fr 1fr; }
+            .principles { grid-template-columns: 1fr 1fr; }
+            .two { grid-template-columns: 1.15fr 0.85fr; }
+            .close-grid { grid-template-columns: 1fr 1fr; }
+            a { color: inherit; text-decoration: none; }
+            .close a { color: #aa975a; }
+            .close {
+                page-break-before: always;
+                padding: 16mm 0 12mm;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .cover, .close, .panel, .side {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <div>Mathibele Mahlaela Attorneys · <strong>Business Profile</strong> · October 2026</div>
+        <button type="button" onclick="window.print()">Print or save as PDF</button>
+    </div>
+
+    <article class="document">
+        <header class="cover">
+            <div>
+                <img class="cover-logo" src="assets/logo-on-dark.png" alt="Mathibele Mahlaela Attorneys">
+                <p class="cover-kicker">Business Profile</p>
+                <h1>
+                    <span class="visually-hidden">Mathibele Mahlaela Attorneys. </span>
+                    Tailored legal solutions. Trusted counsel.
+                </h1>
+                <p class="cover-deck">A Centurion practice in commercial and company law, corporate work, employment, the resolution of contract disputes, public administration and procurement, property, and the planning and administration of estates.</p>
+            </div>
+            <div>
+                <div class="cover-rule" aria-hidden="true"></div>
+                <dl class="cover-meta">
+                    <div>
+                        <dt>Office</dt>
+                        <dd>Centurion, Gauteng</dd>
+                    </div>
+                    <div>
+                        <dt>Reference</dt>
+                        <dd>MMA–BP–2026</dd>
+                    </div>
+                    <div>
+                        <dt>Date</dt>
+                        <dd>14 October 2026</dd>
+                    </div>
+                </dl>
+            </div>
+        </header>
+
+        <section class="sheet" id="contents">
+            <div class="running">
+                <span>Mathibele Mahlaela Attorneys</span>
+                <span>Business Profile</span>
+            </div>
+            <p class="kicker">Contents</p>
+            <h2>How this profile is arranged</h2>
+            <p class="lede">One account of the practice, for a client, a counterparty, or a procurement office.</p>
+            <p>The pages that follow set out what the firm does, how it is constituted, the experience on which the advice rests, and the practical information needed to give an instruction. Statements about the firm’s own position are the firm’s. Statements drawn from a public register or a membership list are identified as such. This profile describes the practice. It is not a legal opinion, and it is not an offer to accept a mandate.</p>
+            <ol class="toc">
+                <li><a href="#practice"><span class="toc-name">The practice</span><span class="toc-dots"></span><span class="toc-num">01</span></a></li>
+                <li><a href="#particulars"><span class="toc-name">Particulars</span><span class="toc-dots"></span><span class="toc-num">02</span></a></li>
+                <li><a href="#constitution"><span class="toc-name">Place and constitution</span><span class="toc-dots"></span><span class="toc-num">03</span></a></li>
+                <li><a href="#standard"><span class="toc-name">The standard of the work</span><span class="toc-dots"></span><span class="toc-num">04</span></a></li>
+                <li><a href="#instruction"><span class="toc-name">How an instruction proceeds</span><span class="toc-dots"></span><span class="toc-num">05</span></a></li>
+                <li><a href="#work"><span class="toc-name">The work</span><span class="toc-dots"></span><span class="toc-num">06</span></a></li>
+                <li><a href="#principal"><span class="toc-name">The principal</span><span class="toc-dots"></span><span class="toc-num">07</span></a></li>
+                <li><a href="#clients"><span class="toc-name">Who instructs the firm</span><span class="toc-dots"></span><span class="toc-num">08</span></a></li>
+                <li><a href="#clients-words"><span class="toc-name">In clients’ words</span><span class="toc-dots"></span><span class="toc-num">09</span></a></li>
+                <li><a href="#procurement"><span class="toc-name">For a procurement file</span><span class="toc-dots"></span><span class="toc-num">10</span></a></li>
+                <li><a href="#standing"><span class="toc-name">Standing and the limit of this profile</span><span class="toc-dots"></span><span class="toc-num">11</span></a></li>
+                <li><a href="#correspondence"><span class="toc-name">Correspondence</span><span class="toc-dots"></span><span class="toc-num">12</span></a></li>
+            </ol>
+        </section>
+
+        <section class="sheet" id="practice">
+            <div class="running">
+                <span>01 · The practice</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">01</p>
+            <h2>The practice</h2>
+            <p class="lede">South African counsel, from an office in Centurion, for the matters that hold a commercial and a family life together.</p>
+            <p>Mathibele Mahlaela Attorneys is a law firm in Centurion, Pretoria. We advise businesses, families and individuals. The published work covers commercial and company law, corporate law, employment and labour, the resolution of disputes arising from contracts, public administration and procurement, property, consumer matters, wills and trusts, the administration of deceased estates, Road Accident Fund claims, and general legal advice.</p>
+            <p>The claim we make for the practice is a plain one, and it is the line we use of ourselves: tailored legal solutions, and counsel a client can trust. The work is arranged around the client’s question. The measure of a file is the outcome that can properly be achieved, explained in language the client can use.</p>
+            <p>The distinguishing fact of the practice is the road by which the principal came to it. Before private practice, Mathibele Mahlaela spent long service inside institutions that live by contract and by statute: Eskom, Transnet Pipelines and the South African Bureau of Standards, together with a period as legal manager at JPC. The daily work in those appointments is the work clients now bring to Centurion. Drafting, reviewing, vetting and negotiating agreements, including procurement and information-technology contracts. Advising when legislation changes. Managing litigation. Dealing with requests under the Promotion of Access to Information Act. The practice, recorded from November 2022, places that experience at the instruction of the client in front of us.</p>
+
+            <div class="facts">
+                <div>
+                    <strong>A personal liability company</strong>
+                    <span>Incorporated on 20 April 2022. Enterprise number 2022/443270/21. In business, at the Centurion address.</span>
+                </div>
+                <div>
+                    <strong>An institutional training</strong>
+                    <span>Contracts, procurement, compliance and litigation management inside Eskom, Transnet Pipelines and the SABS.</span>
+                </div>
+                <div>
+                    <strong>A compact practice</strong>
+                    <span>The attorney who accepts the instruction is the attorney who does the work. Scope is agreed before the file runs.</span>
+                </div>
+                <div>
+                    <strong>A national field of work</strong>
+                    <span>The office is in Centurion. Contract disputes are taken to forums across South Africa, as the matter requires.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sheet break" id="particulars">
+            <div class="running">
+                <span>02 · Particulars</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">02</p>
+            <h2>Particulars</h2>
+            <p>The table collects the facts a counterparty, a bank or a supply-chain office usually asks for first. Register particulars are taken from a public compilation of company-registry information and should be confirmed against a current disclosure from the Companies and Intellectual Property Commission whenever a formal document requires it.</p>
+            <table class="particulars">
+                <tbody>
+                    <tr>
+                        <th scope="row">Legal name</th>
+                        <td>Mathibele Mahlaela Attorneys</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Published style</th>
+                        <td>The firm’s website styles the practice Mathibele Mahlaela Attorneys Inc.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Form</th>
+                        <td>Personal liability company, the incorporated form used by an attorneys’ practice.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Enterprise number</th>
+                        <td>2022/443270/21 &nbsp;·&nbsp; K2022443270</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Incorporated</th>
+                        <td>20 April 2022</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Status</th>
+                        <td>In business</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Registered office</th>
+                        <td>2957B Goshawk Street, Thatchfield Hills, Centurion, Gauteng, 0157</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Postal address of the practice</th>
+                        <td>2957B Goshawk Street, Thatchfield Hills, Rua Vista, Centurion, 0157</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Director on the register</th>
+                        <td>MG Mathibele Granny Mahlaela</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Principal</th>
+                        <td>Mathibele Mahlaela, attorney</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Professional listing</th>
+                        <td>Law Society of South Africa membership list, under Pretoria, in the name of the firm.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ownership</th>
+                        <td>The firm describes itself as 100&nbsp;percent black-owned.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Origin of the practice</th>
+                        <td>The firm’s company profile records 2019. The company now housing the practice was incorporated in 2022. The principal’s appointment in the practice is recorded from November 2022.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Consulting hours</th>
+                        <td>Monday to Friday, 08:00 to 17:00, as published on the firm’s website. The office is closed on Saturday and Sunday. Some public listings show a close at 16:00; a consultation should be confirmed with the office.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Telephone</th>
+                        <td><a href="tel:+27126612607">012 661 2607</a> &nbsp;·&nbsp; +27 12 661 2607</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email</th>
+                        <td><a href="mailto:info@mathibelem.co.za">info@mathibelem.co.za</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Website</th>
+                        <td><a href="https://mathibelem.co.za">mathibelem.co.za</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note">A B-BBEE level, a tax-compliance PIN and a Legal Practice Council enrolment number are not printed here. Each of those documents has a date, and a tender or a transaction should be supported by the current original. We provide them on request. See section 10.</p>
+        </section>
+
+        <section class="sheet" id="constitution">
+            <div class="running">
+                <span>03 · Place and constitution</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">03</p>
+            <h2>Place and constitution</h2>
+            <div class="two">
+                <div>
+                    <p>The office is at 2957B Goshawk Street, Thatchfield Hills, in the Rua Vista area of Centurion. It is a working attorneys’ office in a residential estate, within reach of Pretoria and the wider Gauteng commercial centre, and it is the registered office of the company.</p>
+                    <p>The company has a single active director on the published register. The practice is conducted in the name Mathibele Mahlaela, which is also the name under which the firm appears on the Law Society of South Africa membership list. Clients who want to know who will have conduct of their matter are entitled to a direct answer, and the answer is given at the start: the principal has conduct, unless it is work this office should not take.</p>
+                    <p>Our website speaks of a team of legal professionals. That sentence describes the standard we apply to every person who touches a file. It does not describe a large partnership. The published company particulars describe a compact practice. We prefer that fact to be plain. A client of this office is not passed along a corridor.</p>
+                    <p>The firm’s company profile records the practice as having begun in 2019. The personal liability company was incorporated on 20 April 2022, and the principal’s role in the firm is recorded from November of that year, immediately after six and a half years as Senior Legal Advisor at the South African Bureau of Standards. The years before the company are part of the story of the practice. They are set out in section 07, because they are the reason a procurement contract or a PAIA request can be advised on from experience of the institution that receives it.</p>
+                </div>
+                <aside class="side">
+                    <h3>What “Inc.” means here</h3>
+                    <p>An attorneys’ practice that incorporates does so as a personal liability company. The initials after the name are a statement of that form. They are not a statement about the number of directors, and they do not move professional responsibility off the practitioner. The attorney remains accountable for the work.</p>
+                    <h4>The address, once</h4>
+                    <p>2957B Goshawk Street<br>Thatchfield Hills, Rua Vista<br>Centurion, 0157<br>Gauteng, South Africa</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="sheet" id="standard">
+            <div class="running">
+                <span>04 · The standard of the work</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">04</p>
+            <h2>The standard of the work</h2>
+            <p class="lede">Integrity, honesty and loyalty, and a commitment to the client that survives the first meeting.</p>
+            <p>Those words are the firm’s own, from the account we publish of ourselves. A profile is of little use if it leaves them as a motto. This is what they govern in the file.</p>
+            <div class="principles">
+                <div class="principle">
+                    <em>Integrity</em>
+                    <p>Advice that can be relied on includes the advice not to proceed. Where the law, the contract or the facts do not support the result a client hopes for, that is the advice we give. A result described as a win is a result the law will sustain.</p>
+                </div>
+                <div class="principle">
+                    <em>Honesty</em>
+                    <p>Prospects, time and cost are discussed early, in ordinary language. Where a step will change the cost or the risk, we say so before the step is taken. We do not publish a tariff in this profile, because a serious fee is agreed against a defined instruction.</p>
+                </div>
+                <div class="principle">
+                    <em>Loyalty</em>
+                    <p>A mandate is accepted only when we can give it our undivided professional attention. We consider conflicts before we accept work, and we will not act on both sides of the same dispute. The client’s information stays with the matter.</p>
+                </div>
+                <div class="principle">
+                    <em>Satisfaction</em>
+                    <p>A file is finished, not merely opened. Reporting is clear. Original documents are accounted for. A client should never have to guess where a matter stands, or whether the person on the other side of the desk still has it in hand.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sheet" id="instruction">
+            <div class="running">
+                <span>05 · How an instruction proceeds</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">05</p>
+            <h2>How an instruction proceeds</h2>
+            <p>The sequence below is the order in which a matter is taken up. It is a professional method. It is not a service-level promise with invented response times. Urgent matters, including those with a statutory time limit, are identified at the first contact and are ordered accordingly.</p>
+            <ol class="steps">
+                <li>
+                    <div>
+                        <strong>The question is identified.</strong>
+                        A consultation, in the office or by arrangement, establishes what has happened, what the client needs, and what the deadline is. Road Accident Fund claims, reviews of administrative action, and notices under a contract are typical of work in which the date matters as much as the merits.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>A conflict is considered before a mandate.</strong>
+                        We decline work we cannot do cleanly. If the right practitioner is a conveyancer, or counsel is required for a particular forum, that is said at this point.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>Scope and fees are agreed.</strong>
+                        The client receives a clear statement of what will be done, what we need from the client, and the basis of the fee. The basis may be a quoted amount for a defined piece of work, time spent where the scope cannot yet be fixed, or a tariff where one applies.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>The work is done by the person with conduct.</strong>
+                        Drafting, an opinion, a negotiation, representation at a forum, or the administration of an estate. The client is told when something material changes: a new document, a shift in the other side’s position, a date from the Master or from a tribunal.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>The advice is given in a form the client can use.</strong>
+                        A contract the client can sign, a letter the client can send, an opinion the client can act on, or a recommendation to stop. Technical language is translated. It is not used as a screen.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>The matter is closed properly.</strong>
+                        Signed originals are dealt with, estate accounts are taken through to the Master’s requirements, a settlement is recorded so that it can be enforced, and the client knows the file is at an end.
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section class="sheet break" id="work">
+            <div class="running">
+                <span>06 · The work</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">06</p>
+            <h2>The work</h2>
+            <p class="lede">Ten areas, stated as we publish them, with the kind of instruction each one actually is.</p>
+            <p>We do not print a list of named matters. Client work is confidential, and a profile that invents a deal sheet is of no use to anyone. What follows is the scope of each area, in the terms we use publicly, and the instructions a client may properly bring.</p>
+
+            <article class="practice">
+                <div class="practice-no">6.1</div>
+                <div>
+                    <h3>Commercial and company law</h3>
+                    <p>The contract is the centre of the practice. We draft and we review. We negotiate. When a contract has failed, we litigate and we arbitrate.</p>
+                    <p>This is the work the principal did, for years, from inside large institutions: commercial and non-commercial agreements, procurement contracts, and information-technology contracts, taken from a first draft through vetting and negotiation. A private company instructing this office is instructing someone who has sat on the other side of that table.</p>
+                    <h4>An instruction may be</h4>
+                    <ul>
+                        <li>the drafting of a commercial agreement;</li>
+                        <li>a review of the other side’s draft before it is signed;</li>
+                        <li>a negotiation on price, duration, liability, termination and the documents that sit behind the signature;</li>
+                        <li>advice when performance has broken down;</li>
+                        <li>representation in litigation or arbitration arising from the contract.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="practice">
+                <div class="practice-no">6.2</div>
+                <div>
+                    <h3>Corporate law</h3>
+                    <p>We advise on regulatory compliance, on due diligence, and on mergers and acquisitions. For a practice of this size the work is transaction support and corporate advice for owner-managed and private companies, carried by the attorney with conduct. The scope of a transaction is settled before it runs, including whether a particular step needs another specialist.</p>
+                    <h4>An instruction may be</h4>
+                    <ul>
+                        <li>a due-diligence review before a purchase or an investment;</li>
+                        <li>advice on a company’s obligations under the legislation that governs it;</li>
+                        <li>support through a sale, a purchase or a restructuring of a private company;</li>
+                        <li>the corporate documents that have to be right before a commercial contract is worth signing.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="practice">
+                <div class="practice-no">6.3</div>
+                <div>
+                    <h3>Employment and labour law</h3>
+                    <p>We act for employers and for employees. The work includes legal representation and the drafting of employment contracts. Because we are prepared to act on either side of the employment relationship, the conflict enquiry at the start of a matter is not a formality.</p>
+                    <h4>An instruction may be</h4>
+                    <ul>
+                        <li>an employment contract, or a suite of them, drafted for the way the business actually works;</li>
+                        <li>advice to an employer before a decision is taken;</li>
+                        <li>advice to an employee who has received a decision and needs to know what it means;</li>
+                        <li>representation in a dispute arising from the employment relationship.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="practice">
+                <div class="practice-no">6.4</div>
+                <div>
+                    <h3>Alternative dispute resolution</h3>
+                    <p>We represent clients in disputes that come out of contracts, including construction contracts, at forums across South Africa. Where the contract has already chosen arbitration or another process, we advise on that clause and we appear in the process it creates. The aim, where the facts allow it, is a resolution that costs less than a trial and still protects the right.</p>
+                    <h4>An instruction may be</h4>
+                    <ul>
+                        <li>advice on a dispute-resolution clause before a contract is signed;</li>
+                        <li>representation in a construction or other commercial dispute;</li>
+                        <li>the conduct of an arbitration, or of a preliminary process the contract requires;</li>
+                        <li>a frank view on whether the dispute should be settled, referred, or fought.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="practice">
+                <div class="practice-no">6.5</div>
+                <div>
+                    <h3>Public administration and procurement</h3>
+                    <p>The firm’s published specialisms include private and public administration law, and procurement law. This is the field in which the principal’s institutional career is most directly relevant: procurement-related contracts, legislative compliance, legal opinions, requests under the Promotion of Access to Information Act, and the management of litigation that follows a public decision.</p>
+                    <p>Instructions in this field sit against the statutes that govern public contracting and administrative action. Among them are the Public Finance Management Act, the Municipal Finance Management Act, the Preferential Procurement Policy Framework Act, the Promotion of Administrative Justice Act and the Promotion of Access to Information Act. Naming those statutes describes the setting of the work. It is not a claim about any particular case.</p>
+                    <h4>An instruction may be</h4>
+                    <ul>
+                        <li>the drafting, vetting or negotiation of a procurement contract;</li>
+                        <li>advice to a bidder, or to an institution, on the regularity of a procurement step;</li>
+                        <li>a PAIA request, or the response to one;</li>
+                        <li>an opinion on whether an administrative decision can stand;</li>
+                        <li>management of the litigation that a public-law dispute becomes.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="practice">
+                <div class="practice-no">6.6</div>
+                <div>
+                    <h3>Property law</h3>
+                    <p>Property law is one of the areas the firm publishes. Advice on the rights and the documents is work an attorney undertakes. The transfer of land is reserved to a conveyancer. A client whose matter includes transfer should confirm, at the first consultation, how that part of the work will be attended to. We say so at the beginning, while the transaction can still be arranged properly.</p>
+                    <h4>An instruction may be</h4>
+                    <ul>
+                        <li>advice on a lease, a sale or another property contract before it is signed;</li>
+                        <li>a dispute about occupation, payment or the meaning of a property agreement;</li>
+                        <li>coordination, with a conveyancer where transfer is required, so that the legal advice and the transfer do not diverge.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="practice">
+                <div class="practice-no">6.7</div>
+                <div>
+                    <h3>Consumer law</h3>
+                    <p>Consumer law is part of the practice as the principal publishes it. The work is advice and representation where a transaction with a supplier, a credit provider or another business has gone wrong, and where the Consumer Protection Act or the contract between the parties governs the complaint.</p>
+                    <h4>An instruction may be</h4>
+                    <ul>
+                        <li>a reading of the contract and of the consumer’s actual rights under it;</li>
+                        <li>correspondence that puts the complaint on a proper footing;</li>
+                        <li>representation if the complaint has to be taken further.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="practice">
+                <div class="practice-no">6.8</div>
+                <div>
+                    <h3>Estate planning</h3>
+                    <p>We prepare wills and trust documents, so that a family’s assets pass in the way the client intends, and so that the people left behind are not left to guess. A will is a small document with a long consequence. It is drafted to be valid, to be findable, and to be capable of being administered.</p>
+                    <h4>An instruction may be</h4>
+                    <ul>
+                        <li>a will for a client whose affairs are straightforward, drafted so that they stay that way;</li>
+                        <li>a will where there is a business, a blended family, or property that needs a specific direction;</li>
+                        <li>a trust deed, where a trust is the right instrument and the client understands what it will demand of the trustees;</li>
+                        <li>a review of an existing will that no longer matches the life it was written for.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="practice">
+                <div class="practice-no">6.9</div>
+                <div>
+                    <h3>Administration of deceased estates</h3>
+                    <p>We administer deceased estates, whether the deceased left a will or died intestate. The work is the reporting of the estate, dealing with the Master, the creditors and the heirs, and carrying the liquidation and distribution account through to its conclusion. It is done with care, because the people who bring this instruction are usually doing it once, and at a difficult time.</p>
+                    <h4>An instruction may be</h4>
+                    <ul>
+                        <li>the first report of a death to the Master, and the documents that report requires;</li>
+                        <li>administration under a will;</li>
+                        <li>administration where there is no will, and the Intestate Succession Act determines who inherits;</li>
+                        <li>advice to an executor or an heir who is already inside an estate and needs to know whether it is being conducted properly.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="practice">
+                <div class="practice-no">6.10</div>
+                <div>
+                    <h3>Road Accident Fund claims, and general advice</h3>
+                    <p>We accept instructions on claims against the Road Accident Fund. Claims of this kind are governed by statute, and by time limits that can extinguish a right if they are missed. The practical protection is an early consultation, with the documents that exist: the accident report, the medical records, and any correspondence already received.</p>
+                    <p>Alongside any single matter, we give general legal advice to businesses and individuals who do not keep a lawyer on the staff and who need one person to telephone when a contract, a letter or a regulatory question arrives. That retainer, where it is agreed, is the same standard as a once-off instruction. It is simply available before the problem has hardened.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="sheet" id="principal">
+            <div class="running">
+                <span>07 · The principal</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">07</p>
+            <h2>The principal</h2>
+            <p class="lede">Mathibele Mahlaela came to this practice after a career spent advising institutions on the contracts those institutions have to live with.</p>
+            <p>The published education record is a B&nbsp;Proc in law from the University of Limpopo (Turfloop), completed between 1987 and 1991. The Baccalaureus Procurationis was, for many years, the South African degree directed at practice as an attorney. The Law Society of South Africa membership list records Mathibele Mahlaela of this firm under Pretoria.</p>
+            <p>The professional profile records the appointments below. They are set out because they are the substance of the advice. From November 2002 to April 2014 the work at Eskom was the drafting, review and vetting of commercial contracts, the negotiation of those contracts, requests under the Promotion of Access to Information Act, and compliance with the legislation that bound the company. A period as legal manager at JPC followed, described as the execution of the legal services of that office, including stakeholder reporting. Dates for that appointment, finer than its place in the sequence, were not published in the sources used here. From February 2015 to March 2016, as Senior Legal Advisor at Transnet Pipelines, the work was again contracts, compliance with the laws applicable to the company, stakeholder reporting, and legal advice. From April 2016 to October 2022, as Senior Legal Advisor at the South African Bureau of Standards in Groenkloof, it was the drafting, review, vetting and negotiation of commercial and non-commercial contracts, including procurement and information-technology contracts; training when new legislation affected the organisation; PAIA applications; legal opinions; and the management of litigation.</p>
+            <p>Private practice began, on that record, in November 2022. The client who instructs the firm is instructing the person who did that work.</p>
+
+            <table class="career">
+                <thead>
+                    <tr>
+                        <th scope="col">Period</th>
+                        <th scope="col">Appointment</th>
+                        <th scope="col">The work, as published</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nov 2022 — present</td>
+                        <td>Attorney, Mathibele Mahlaela Attorneys</td>
+                        <td>Conduct of the practice described in this profile.</td>
+                    </tr>
+                    <tr>
+                        <td>Apr 2016 — Oct 2022</td>
+                        <td>Senior Legal Advisor, South African Bureau of Standards, Groenkloof</td>
+                        <td>Contracts, including procurement and information-technology agreements; legislative training; PAIA; opinions; litigation management.</td>
+                    </tr>
+                    <tr>
+                        <td>Feb 2015 — Mar 2016</td>
+                        <td>Senior Legal Advisor, Transnet Pipelines</td>
+                        <td>Drafting, review, vetting and negotiation of contracts; statutory compliance; stakeholder reporting; legal advice.</td>
+                    </tr>
+                    <tr>
+                        <td>After Apr 2014</td>
+                        <td>Legal Manager, JPC</td>
+                        <td>Execution of the legal services of the office, including stakeholder reporting and management. Month-level dates were not published in the sources used for this profile. The appointment is recorded between Eskom and Transnet Pipelines.</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 2002 — Apr 2014</td>
+                        <td>Senior Advisor, Contracts, Eskom Holdings SOC Ltd</td>
+                        <td>Drafting, review and vetting of commercial contracts; negotiation; PAIA requests; legislative compliance.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note">Education and appointments are taken from the principal’s published professional profile. They are not a curriculum vitae prepared for this document, and they should be read with section 11.</p>
+        </section>
+
+        <section class="sheet" id="clients">
+            <div class="running">
+                <span>08 · Who instructs the firm</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">08</p>
+            <h2>Who instructs the firm</h2>
+            <p>We do not publish a client list. The practice is organised for the following kinds of instruction, which follow from the work in section 06.</p>
+            <ul class="plain-list">
+                <li>Owner-managed and private companies that need contracts drafted, read or negotiated, and a lawyer they can reach without an in-house department.</li>
+                <li>Employers and employees, never on the same dispute.</li>
+                <li>Bidders, contractors and institutions concerned with a procurement process or an administrative decision.</li>
+                <li>Parties to a commercial dispute, including a dispute under a construction contract, who need representation at a forum in South Africa.</li>
+                <li>Families who need a will, a trust, or the administration of a deceased estate, with or without a will.</li>
+                <li>Individuals with a property question, a consumer complaint, or a claim against the Road Accident Fund.</li>
+            </ul>
+            <p>The office is in Centurion. The field of the work is South Africa. Where a forum sits outside Gauteng, the instruction is accepted with that travel and that cost discussed at the outset.</p>
+        </section>
+
+        <section class="sheet" id="clients-words">
+            <div class="running">
+                <span>09 · In clients’ words</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">09</p>
+            <h2>In clients’ words</h2>
+            <p>A public listing of the Centurion practice records eight reviews, each given the highest mark on that listing’s scale. The three comments below are reproduced because they describe the manner of the work: attention, communication, and the way a client was treated. They are not a statistical claim, and they are not a promise about the next matter. Reviewers are not named in the listing we consulted.</p>
+
+            <blockquote>
+                <p>“Mathibele Mahlaela Attorneys has been instrumental in helping me and my business navigate complex legal matters. Their expertise, dedication, professionalism, attention to detail and clear communication have made a huge difference for us. They went far and beyond to help us, always felt like a priority. We highly recommend them to any business or individual in need of reliable legal support.”</p>
+                <footer>Public review of the practice · October 2024</footer>
+            </blockquote>
+            <blockquote>
+                <p>“The Mathibele Mahlaela Attorneys are so professional and their interests and goal are well targeted and focused at the needs and satisfaction of the clients. I would like to thank you so much for handling my case with such dignity and respect, and yes at the end it was a win as promised.”</p>
+                <footer>Public review of the practice · November 2024</footer>
+            </blockquote>
+            <blockquote>
+                <p>“The place is nice and very clean, there’s tranquility in the surrounding environment. The owner is respectful, soft spoken and informative.”</p>
+                <footer>Public review of the practice · October 2024</footer>
+            </blockquote>
+            <p class="note">A further public comment, in June 2025, records the service as outstanding. We leave it in that single word.</p>
+        </section>
+
+        <section class="sheet" id="procurement">
+            <div class="running">
+                <span>10 · For a procurement file</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">10</p>
+            <h2>For a procurement file</h2>
+            <p>Supply-chain offices are used to brochures that assert a B-BBEE level, a tax status and a turnover band without attaching the document. This profile will not do that. The firm describes itself as 100&nbsp;percent black-owned. A score, a sworn affidavit or a verification certificate is a separate document, and it has a date. So does a tax-compliance status. So does a letter of good standing.</p>
+            <div class="panel">
+                <h3>What to request, and what we will send</h3>
+                <ul class="plain-list">
+                    <li>A current CIPC disclosure for enterprise number 2022/443270/21.</li>
+                    <li>The firm’s current B-BBEE affidavit or verification certificate. The level is the level on that document, not a level repeated from memory in a profile.</li>
+                    <li>A current tax-compliance status PIN.</li>
+                    <li>Confirmation of professional standing, for the practitioner who will have conduct, where the tender or the transaction asks for it.</li>
+                    <li>The name of the person with conduct, which for work accepted by this office is the principal, unless we have said otherwise in the mandate.</li>
+                </ul>
+                <p>Address the request to <a href="mailto:info@mathibelem.co.za">info@mathibelem.co.za</a> or telephone <a href="tel:+27126612607">012 661 2607</a>. Mark it for the procurement file, and say the date by which the documents are needed.</p>
+            </div>
+        </section>
+
+        <section class="sheet" id="standing">
+            <div class="running">
+                <span>11 · Standing and the limit of this profile</span>
+                <span>Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">11</p>
+            <h2>Standing, and the limit of this profile</h2>
+            <p>Attorneys in South Africa practise under the Legal Practice Act 28 of 2014. The Legal Practice Council, and its Provincial Councils, regulate legal practitioners and candidate legal practitioners, set norms and standards, and deal with admission, enrolment and professional conduct. A member of the public may search the Council’s practitioner register. This profile does not reproduce an enrolment number. A client or a counterparty who needs the number, or written confirmation of a Fidelity Fund certificate where trust money will be held, should ask the firm or consult the register. We treat that request as an ordinary one.</p>
+            <p>The Law Society of South Africa is a voluntary professional body. Its membership list records Mathibele Mahlaela, Pretoria, Mathibele Mahlaela Attorneys. Membership of that body is not a substitute for enrolment.</p>
+            <p>Nothing in this profile is legal advice on a reader’s own facts. Nothing in it is a warranty of a result. Public reviews describe past clients; they do not predict the next file. Company-register particulars were taken from a public compilation and should be confirmed against a current CIPC disclosure for any formal use. Where this document and a later certificate differ, the later certificate governs.</p>
+            <p>Client matters are confidential. The absence of a named deal list is deliberate.</p>
+
+            <h3 style="margin-top: 28px;">Sources consulted</h3>
+            <div class="sources">
+                <ol>
+                    <li>The firm’s website: the account of the practice, the six published service descriptions, the contact particulars, the consulting hours, and the structured data for the Centurion office.</li>
+                    <li>The firm’s published company profile: the 2019 origin, the description of the practice as 100&nbsp;percent black-owned, and the specialisms in contracts, corporate and commercial law, estates, property, private and public administration, procurement, and general advice.</li>
+                    <li>The principal’s published professional profile: the B&nbsp;Proc, the appointments at Eskom, JPC, Transnet Pipelines and the South African Bureau of Standards, and the practice areas that include consumer law and Road Accident Fund claims.</li>
+                    <li>The Law Society of South Africa membership list, Gauteng section, recording Mathibele Mahlaela of this firm at Pretoria.</li>
+                    <li>Publicly reproduced company-register particulars for K2022443270 / 2022/443270/21, including the date of incorporation, the form, the status, the registered address and the recorded director.</li>
+                    <li>A public place listing of the Centurion office, for the eight reviews quoted or noted in section 09, and for the variant closing hour mentioned in section 02.</li>
+                </ol>
+                <p>Particulars are current to the public record consulted in October 2026. The firm will correct any particular that a later official document shows to be out of date.</p>
+            </div>
+        </section>
+
+        <footer class="close" id="correspondence">
+            <div class="running" style="border-bottom-color: rgba(170,151,90,0.45); color: rgba(247,244,238,0.7);">
+                <span>12 · Correspondence</span>
+                <span style="color: var(--gold);">Mathibele Mahlaela Attorneys</span>
+            </div>
+            <p class="kicker">12</p>
+            <h2>Correspondence</h2>
+            <p class="lede" style="color: #f7f4ee;">An instruction begins with a conversation. The office will say, at that conversation, whether it can do the work.</p>
+            <div class="close-grid">
+                <div>
+                    <h3>Visit</h3>
+                    <p>2957B Goshawk Street<br>Thatchfield Hills, Rua Vista<br>Centurion, 0157<br>Gauteng, South Africa</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Monday to Friday<br>08:00 to 17:00<br>Saturday and Sunday, closed<br>Please arrange a consultation.</p>
+                </div>
+                <div>
+                    <h3>Telephone and email</h3>
+                    <p><a href="tel:+27126612607">012 661 2607</a><br><a href="mailto:info@mathibelem.co.za">info@mathibelem.co.za</a></p>
+                </div>
+                <div>
+                    <h3>Find the office</h3>
+                    <p><a href="https://www.google.com/maps/place/Mathibele+Mahlaela+Attorneys/data=!4m2!3m1!1s0x0:0xe70930fd07077dd?sa=X&amp;ved=1t:2428&amp;ictx=111">Google Maps</a><br><a href="https://mathibelem.co.za">mathibelem.co.za</a></p>
+                </div>
+                <div>
+                    <h3>The profession, in public</h3>
+                    <p><a href="https://www.linkedin.com/company/mathibele-mahlaela-attorneys/">LinkedIn</a><br><a href="https://www.facebook.com/p/Mathibele-Mahlaela-Attorneys-61572920746802/">Facebook</a></p>
+                </div>
+                <div>
+                    <h3>This document</h3>
+                    <p>MMA–BP–2026<br>14 October 2026<br>Centurion</p>
+                </div>
+            </div>
+            <p class="colophon">Mathibele Mahlaela Attorneys &nbsp;·&nbsp; Tailored legal solutions. Trusted counsel. &nbsp;·&nbsp; This profile may be shared with a client, a counterparty or a procurement office. It may not be altered and then presented as the firm’s.</p>
+        </footer>
+    </article>
+</body>
+</html>
